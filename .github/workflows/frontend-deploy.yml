@@ -2,7 +2,7 @@ name: Fly Deploy Frontend
 on:
   push:
     branches:
-      - main
+      - release
     paths:
       - 'src/Web/frontend/**'
 env:
