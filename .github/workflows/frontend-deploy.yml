@@ -4,7 +4,7 @@ on:
     branches:
       - release
     paths:
-      - 'src/Web/frontend/**'
+      - 'src/Web/Client/**'
 env:
   FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN_FRONTEND }}
 jobs:
