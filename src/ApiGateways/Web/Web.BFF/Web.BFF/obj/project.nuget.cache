@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "o/uZ5ihN9BYw2VOa3kzrMaxNORV87Zs10rZo//oaXmKVW5igGiadnjaChtdwFpHOpdqwPuNrZbBAQZpgQknkHA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\emidi\\Documents\\git\\dotnetcore-ddd-microservices\\src\\ApiGateways\\Web\\Web.BFF\\Web.BFF\\Web.BFF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\emidi\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\emidi\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\emidi\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\emidi\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\emidi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\emidi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
