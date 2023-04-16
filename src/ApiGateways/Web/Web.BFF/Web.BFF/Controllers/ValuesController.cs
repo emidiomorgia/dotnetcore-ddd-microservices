@@ -22,6 +22,7 @@ namespace Web.BFF.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public IActionResult Get(int id)
         {
+
             var item = _items.Where(x => x.Id == id).FirstOrDefault();
             if (item != null)
             {
