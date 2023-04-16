@@ -16,7 +16,7 @@ namespace Web.BFF.Controllers
             _logger = logger;
         }
 
-        [HttpGet("/id")]
+        [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ValueItem))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

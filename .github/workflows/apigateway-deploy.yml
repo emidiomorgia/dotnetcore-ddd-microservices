@@ -5,8 +5,6 @@ on:
       - release
     paths:
       - 'src/ApiGateways/Web/Web.BFF/**'
-env:
-  FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN_APIGATEWAY }}
 jobs:
   deploy:
       name: Deploy ApiGateway
@@ -17,4 +15,6 @@ jobs:
       steps:
         - uses: actions/checkout@v2
         - uses: superfly/flyctl-actions/setup-flyctl@master
-        - run: flyctl deploy
+        - run: flyctl deploy --remote-only
+          env:
+            FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN_APIGATEWAY }}

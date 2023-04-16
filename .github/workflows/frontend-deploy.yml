@@ -5,16 +5,16 @@ on:
       - release
     paths:
       - 'src/Web/Client/**'
-env:
-  FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN_FRONTEND }}
 jobs:
   deploy:
       name: Deploy frontend
       defaults:
         run:
           working-directory: ./src/Web/Client
-      runs-on: ubuntu-latest
+      runs-on: ubuntu-latest 
       steps:
         - uses: actions/checkout@v2
         - uses: superfly/flyctl-actions/setup-flyctl@master
-        - run: flyctl deploy
+        - run: flyctl deploy --remote-only
+          env:
+            FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN_FRONTEND }}
