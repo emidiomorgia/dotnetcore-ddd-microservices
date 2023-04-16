@@ -1,38 +1,15 @@
-# fly.toml file generated for acute-armadillo-apigateway on 2023-04-16T22:02:46+02:00
+# fly.toml file generated for acute-armadillo-apigateway on 2023-04-16T23:41:11+02:00
 
 app = "acute-armadillo-apigateway"
-kill_signal = "SIGINT"
-kill_timeout = 5
 primary_region = "cdg"
-processes = []
 
-[env]
-
-[experimental]
-  auto_rollback = true
-
-[[services]]
-  http_checks = []
+[http_service]
   internal_port = 80
-  processes = ["app"]
-  protocol = "tcp"
-  script_checks = []
-  [services.concurrency]
-    hard_limit = 25
-    soft_limit = 20
-    type = "connections"
+  force_https = true
 
-  [[services.ports]]
-    force_https = true
-    handlers = ["http"]
-    port = 80
-
-  [[services.ports]]
-    handlers = ["tls", "http"]
-    port = 443
-
-  [[services.tcp_checks]]
-    grace_period = "1s"
+[checks]
+  [checks.alive]
+    type = "tcp"
     interval = "15s"
-    restart_limit = 0
     timeout = "2s"
+    grace_period = "5s"
