@@ -1,4 +1,4 @@
-name: Fly Deploy Frontend
+name: Fly Deploy ApiGateway
 on:
   push:
     branches:
@@ -9,7 +9,7 @@ env:
   FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN_APIGATEWAY }}
 jobs:
   deploy:
-      name: Deploy frontend
+      name: Deploy ApiGateway
       defaults:
         run:
           working-directory: ./src/ApiGateways/Web/Web.BFF
